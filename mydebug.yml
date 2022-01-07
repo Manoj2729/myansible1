@@ -1,5 +1,5 @@
 --- 
-- hosts: 172.31.17.233 
+- hosts:  172.31.17.233 
   because: yes
   tasks: 
   - name: i want to execute linux command directly by playbook 
