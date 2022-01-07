@@ -2,9 +2,11 @@
 - hosts: 172.31.17.233
   become: yes
   tasks: 
-  - name: i want to execte linux command directly by playbook 
+  - name: i want to execute linux command directly by playbook 
     command: hostname -f 
     registe: myresult
+    
+
     
   - name: i want to display my first task result 
     debug:
