@@ -20,6 +20,6 @@
 
   - name: install tree 
     apt:
-      name: tree 
+      name: git 
       state: present 
     when: myresult.stderr !=""
