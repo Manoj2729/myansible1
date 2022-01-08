@@ -1,0 +1,13 @@
+--- 
+- hosts: 172.31.17.233 
+  become: yes 
+  tasks: 
+  - include_tasks: myfile1.yml
+  - name: i want to install webserver on ansible node 
+    apt: 
+      name: apache2 
+      state: present 
+  - name: i want copy myindex file into ansible node side 
+    template: 
+        src: 
+        dest: /var/www/html/index.html
